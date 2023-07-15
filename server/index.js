@@ -20,8 +20,8 @@ app.post('/gift', (req, res) => {
   // grab the parameters from the front-end here
   const { name, proof } = req.body;
 
-  console.log(name);
-  console.log(proof);
+  // console.log(name);
+  // console.log(proof);
 
   // TODO: prove that a name is in the list
   const isInTheList = verifyProof(proof, name, MERKLE_ROOT);
